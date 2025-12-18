@@ -13,6 +13,11 @@ export async function getUser(name: string) {
   return firstOrUndefined(user);
 }
 
+export async function getUserById(id: string) {
+  const user = await db.select().from(users).where(eq(users.id, id));
+  return firstOrUndefined(user);
+}
+
 export async function getUsers() {
   const allUsers = await db.select().from(users);
   return allUsers;
