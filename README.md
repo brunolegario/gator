@@ -1,3 +1,6 @@
+# Gator
+
+### Usage:
 - Install modules with `npm i`;
 - Install postgres@16 in case you haven't;
 - Enter `psql postgres` to enter psql shell, and use `CREATE DATABASE gator;`;
