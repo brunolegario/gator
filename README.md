@@ -2,22 +2,18 @@
 
 A powerful CLI tool for aggregating and managing RSS feeds from across the internet, built with TypeScript and PostgreSQL.
 
-## Motivation
+## Overview
 
-This project was created as a learning exercise to master several key software engineering concepts:
-
-- **Database Integration**: Learn how to integrate a TypeScript application with a PostgreSQL database
-- **SQL Proficiency**: Practice SQL skills through querying and database migrations using Drizzle, a lightweight tool for type-safe SQL in TypeScript
-- **Long-Running Services**: Build a service that continuously fetches new posts from RSS feeds and stores them in a database
-- **CLI Development**: Create a practical command-line interface for interacting with the system
+Gator is a terminal-based RSS feed aggregator that enables users to subscribe to feeds from across the internet while automatically collecting new posts through a continuously-running background service. The application leverages PostgreSQL for robust data persistence and supports multiple users, allowing teams to share feeds and discover content through a collaborative following system. Built with Drizzle ORM, the project employs type-safe SQL operations throughout the codebase, ensuring compile-time guarantees for all database interactions. The CLI interface provides an intuitive command set for managing feeds, browsing aggregated posts, and controlling the aggregation service, making it practical for developers who prefer terminal-based workflows over web interfaces.
 
 ## Features
 
-- 📡 **Add RSS Feeds**: Collect RSS feeds from anywhere on the internet
-- 💾 **PostgreSQL Storage**: Store aggregated posts in a robust PostgreSQL database
-- 👥 **Multi-User Support**: Follow and unfollow RSS feeds added by other users
-- 📰 **Terminal Summaries**: View summaries of aggregated posts directly in your terminal, with links to full articles
-- 🔄 **Continuous Aggregation**: Automatically fetch new posts from followed feeds
+- 📡 **RSS Feed Management**: Add and catalog RSS feeds from anywhere on the internet
+- 💾 **PostgreSQL Storage**: Persistent storage of feeds and posts with relational integrity
+- 👥 **Multi-User Collaboration**: Follow and unfollow feeds shared by other users in the system
+- 📰 **Terminal-Based Browsing**: View post summaries directly in your terminal with links to full articles
+- 🔄 **Continuous Aggregation**: Background service that automatically fetches new posts at regular intervals
+- 🛡️ **Type-Safe Database Operations**: Compile-time SQL validation using Drizzle ORM
 
 ## Quick Start
 
